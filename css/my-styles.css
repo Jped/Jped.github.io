@@ -3,15 +3,24 @@
 }
 body {
     padding-top: 70px;
-    
+    background-image: url('black_lozenge.png') !important;  
 }
 .container{
-   max-width: 1000px; 
+   max-width: 1000px;
 }
-
-#main 
+#name
 {
-    
-    
-background: #FFFFFF !important;
+ font-family: "ostrich-rounded";
+color:#D8D1C1;
+ font-size: 150%;
+ 
+}
+#ped
+{
+    color: #A69D95;
+}
+#bio-line
+
+{
+  color: #D8D1C1;  
 }

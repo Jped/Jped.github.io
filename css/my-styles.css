@@ -24,3 +24,11 @@ color:#D8D1C1;
 {
   color: #D8D1C1;  
 }
+#short-bio
+
+{
+  font-family: "ostrich-rounded";
+  color:#A69D95;  
+  font-size:125%;
+  margin-left: 5em;
+}

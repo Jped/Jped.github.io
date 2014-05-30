@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SlideFace</title>    
+<link rel="shortcut icon" href="fats2.jpg" type="image/jpeg" />   
+</head>
+
+<body>
+    <div id="textslide"></div>
+<script>
+var num=0;
+var strings=
+    ["coockies",
+     "I love cockies",
+     "Facebook",
+     "Facemagazine"];
+setInterval(function() {document.getElementById("textslide").innerHTML=strings[num]
+                 if( num == strings.length-1)
+                     num=0;
+                else
+                    num++;    
+                       
+                       }, 1000);
+</script> 
+ </body>   
+    </html>

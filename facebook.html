@@ -20,7 +20,12 @@
        }(document, 'script', 'facebook-jssdk'));
         function login() {
         FB.login(function(response) {
-            
+            if(response.authResponse){
+                window.location="/";
+            }
+            else{
+                alert("You did not authenticate our FB request. Please try again.");   
+            }
         });
      }
     function test() 

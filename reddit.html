@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spreddit</title>
+    </head>
+    <body>
+        <p id="summary"></p>
+        <script>
+$.getJSON("http://www.reddit.com/.json?jsonp=penplanis", function penplanis(data) {
+    // Get the element with id summary and set the inner text to the result.
+    $('#summary').text(data.result);
+});
+        </script>
+    
+        <button onclick="login();">Login</button>
+    </body>
+

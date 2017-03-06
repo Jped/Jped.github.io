@@ -1,0 +1,24 @@
+.flexCenter {
+  display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+
+-ms-flex-align: center;
+-webkit-align-items: center;
+-webkit-box-align: center;
+
+align-items: center;
+text-align: center;
+}
+
+#jonImage{
+  height:200px;
+  margin-bottom: 10px;
+  border-style: double;
+  border-width:3px;
+}
+
+.description{
+  margin-left: 10px;
+  margin-bottom: 20px;
+}

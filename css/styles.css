@@ -1,16 +1,15 @@
-.flexCenter {
-  display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
-
--ms-flex-align: center;
--webkit-align-items: center;
--webkit-box-align: center;
-
-align-items: center;
-text-align: center;
+#center {
+  text-align: center;
+  margin-top:10%;
 }
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;
+  text-align: center;
 
+}
 #jonImage{
   height:200px;
   margin-bottom: 10px;

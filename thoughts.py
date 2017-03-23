@@ -43,7 +43,7 @@ for file in files:
 html_files       = os.listdir(html_dir)
 html_list        = "<ul>"
 for hf in html_files:
-    html_list+="<li><a href='./{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')])
+    html_list+="<li><a href='./thtml/{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')])
 
 html_list+= "</ul>"
 print html_list

@@ -2,7 +2,7 @@ import os
 import datetime
 from subprocess import call
 
-directory   = r"/mnt/c/Users/pedoe/Documents/code/personalsite/thoughts"
+directory   = r"/mnt/c/Users/pedoe/Documents/code/personalsite/thoughts/"
 html_dir    = r"/mnt/c/Users/pedoe/Documents/code/personalsite/thtml/"
 files       = os.listdir(directory)
 readable_date = str(datetime.date.today())
@@ -43,7 +43,7 @@ for file in files:
 html_files       = os.listdir(html_dir)
 html_list        = "<ul>"
 for hf in html_files:
-    html_list+="<li><a href='./thml/{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')])
+    html_list+="<li><a href='./{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')])
 
 html_list+= "</ul>"
 print html_list

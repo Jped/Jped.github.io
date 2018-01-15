@@ -43,14 +43,16 @@ for file in files:
 html_files       = os.listdir(html_dir)
 article_list     = []
 html_list        = "<ul>"
+html_files.remove("Welcome.html")
 for hf in html_files:
-    article_list.append(("<li><a href='./thtml/{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')]),os.path.getctime(html_dir+"/"+hf)))
+    article_list.append(("<li><a href='./thtml/{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')]),os.path.getmtime(html_dir+"/"+hf)))
 article_list = sorted(article_list, key= lambda s:s[1], reverse=True)
 print article_list
 print "______________"
 for s in article_list:
     html_list+=s[0]
-html_list+= "</ul>"
+
+html_list+= "<li><a href='./thtml/Welcome.html'>Welcome</a></li></ul>"
 thought_html   =   """<doctype !html>
 <html>
 <head>

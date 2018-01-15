@@ -27,7 +27,7 @@ for file in files:
       <link rel="stylesheet" href="../css/styles.css" type="text/css">
     </head>
     <body class= "flexCenter">
-      <div class = "container">
+      <div class = "container" style="width:50%">
         <h1>{0}</h1>
         <small>{1}</small>
         <hr>

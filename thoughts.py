@@ -64,6 +64,7 @@ thought_html   =   """<doctype !html>
 <body>
   <div class = "container">
     <div id = "list">
+      <h5><a href="/">Home</a></h5>
       <h3>Some of My Thoughts</h3>
       <small>I'm sorry I can't spell.</small>
       <br>

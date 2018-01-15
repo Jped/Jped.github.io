@@ -41,10 +41,13 @@ for file in files:
     os.remove(directory+ file)
     #create master thought.html
 html_files       = os.listdir(html_dir)
+article_list     = []
 html_list        = "<ul>"
 for hf in html_files:
-    html_list+="<li><a href='./thtml/{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')])
-
+    article_list.append(("<li><a href='./thtml/{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')]),os.path.getmtime(html_dir+"/"+hf)))
+article_list = sorted(article_list, key= lambda s:s[1])
+for s in article_list:
+    html_list+=s[0]
 html_list+= "</ul>"
 print html_list
 thought_html   =   """<doctype !html>

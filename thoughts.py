@@ -46,10 +46,11 @@ html_list        = "<ul>"
 for hf in html_files:
     article_list.append(("<li><a href='./thtml/{0}'>{1}</a></li>".format(hf, hf[:hf.find('.')]),os.path.getmtime(html_dir+"/"+hf)))
 article_list = sorted(article_list, key= lambda s:s[1])
+print article_list
+print "______________"
 for s in article_list:
     html_list+=s[0]
 html_list+= "</ul>"
-print html_list
 thought_html   =   """<doctype !html>
 <html>
 <head>

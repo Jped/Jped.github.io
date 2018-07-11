@@ -10,7 +10,13 @@ footer {
   text-align: center;
 
 }
+body{
+  background-color: #EEEEEE;
+  font-family: monospace;
+  margin: 40px;
+}
 #jonImage{
+  margin-top: 10%;
   height:200px;
   margin-bottom: 10px;
   border-style: double;
@@ -30,4 +36,20 @@ footer {
 
 #links {
   margin-top: 3%;
+}
+
+#intro{
+  /* font-size: 0.9em; */
+}
+#left,#right{
+  margin-top: 8%;
+}
+#right{
+  text-align: center;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

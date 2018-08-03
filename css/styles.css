@@ -10,6 +10,9 @@ footer {
   text-align: center;
 
 }
+hr{
+  border-color:#bcbcbc;
+}
 body{
   background-color: #EEEEEE;
   font-family: monospace;
@@ -22,13 +25,22 @@ body{
   border-style: double;
   border-width:3px;
 }
-
+#reupic{
+  float:right;
+  margin-left:20px;
+}
 .description{
   margin-left: 10px;
   margin-bottom: 20px;
+  /* display: none; */
+
 }
-
-
+.titles{
+  margin-left: 3%;
+}
+.titles:hover{
+  background-color: #bcbcbc;
+}
 #list{
   margin-top: 3%;
 
@@ -52,4 +64,10 @@ body{
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+
+#reu{
+  width:90%;
+  margin-left: 5%;
+  /* margin-right:  10%; */
 }

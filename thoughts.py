@@ -2,8 +2,8 @@ import os
 import datetime
 from subprocess import call
 
-directory   = r"/mnt/c/Users/pedoe/Documents/code/personalsite/thoughts/"
-html_dir    = r"/mnt/c/Users/pedoe/Documents/code/personalsite/thtml/"
+directory   = r"/home/jonny/oldfiles/Documents/code/personalsite/thoughts/"
+html_dir    = r"/home/jonny/oldfiles/Documents/code/personalsite/thtml/"
 files       = os.listdir(directory)
 readable_date = str(datetime.date.today())
 for file in files:
@@ -75,7 +75,7 @@ thought_html   =   """<doctype !html>
 </html>
 """.format(html_list)
 
-thought_file = open("/mnt/c/Users/pedoe/Documents/code/personalsite/thoughts.html", "w")
+thought_file = open("/home/jonny/oldfiles/Documents/code/personalsite/thoughts.html", "w")
 thought_file.write(thought_html)
 thought_file.close()
 
